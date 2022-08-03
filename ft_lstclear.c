@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naal-jen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: naal-jen <naal-jen@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/04 15:58:14 by naal-jen          #+#    #+#             */
-/*   Updated: 2022/05/09 10:25:50 by naal-jen         ###   ########.fr       */
+/*   Created: 2022/08/03 16:04:19 by naal-jen          #+#    #+#             */
+/*   Updated: 2022/08/03 16:45:04 by naal-jen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		return ;
 	while (temp1->next != NULL)
 	{
-		if (temp1->content)
-			del(temp1->content);
-		temp2 = temp1;
+		ft_lstdelone(temp1, del);
 		temp1 = temp1->next;
-		free(temp2);
 	}
 	*lst = NULL;
 }

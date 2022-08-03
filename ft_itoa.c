@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naal-jen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: naal-jen <naal-jen@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/04 15:58:14 by naal-jen          #+#    #+#             */
-/*   Updated: 2022/05/09 10:25:50 by naal-jen         ###   ########.fr       */
+/*   Created: 2022/08/03 15:35:13 by naal-jen          #+#    #+#             */
+/*   Updated: 2022/08/03 16:02:26 by naal-jen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
-#include <stdlib.h>
 
 static char	*positive_number(char *ptr, int i)
 {
@@ -87,8 +86,8 @@ char	*ft_itoa(int n)
 	ptr = (char *)malloc((i + 1) * sizeof(*ptr));
 	if (!ptr)
 		return (NULL);
-	if (nbr == 0 || nbr == -0)
-		return ("0");
+	if (nbr == 0)
+		ptr[0] = '0';
 	if (nbr < 0 && i++)
 	{
 		ptr[j++] = '-';
@@ -99,7 +98,7 @@ char	*ft_itoa(int n)
 		ptr[j++] = nbr % 10 + '0';
 		nbr = nbr / 10;
 	}
-	ptr[j] = '\0';
+	ptr[i + 1] = '\0';
 	return (reverse_string(ptr, i));
 }
 /*int main(void)
@@ -114,5 +113,8 @@ char	*ft_itoa(int n)
 	printf(" -123456789\n\"%s\"\n\n", ft_itoa(-123456789));
 	printf(" 2147483647\n\"%s\"\n\n", ft_itoa(2147483647));
 	printf(" -2147483648\n\"%s\"\n\n", ft_itoa(-2147483648));
+	printf(" 0000000000\n\"%s\"\n\n", ft_itoa(0000000000));
+	printf(" -214748-3648\n\"%s\"\n\n", ft_itoa(-214748-3648));
+	printf(" -2+147483648\n\"%s\"\n\n", ft_itoa(-2+147483648));
 	return (0);
 }*/

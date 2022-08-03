@@ -3,17 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naal-jen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: naal-jen <naal-jen@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/04 15:58:14 by naal-jen          #+#    #+#             */
-/*   Updated: 2022/05/09 10:25:50 by naal-jen         ###   ########.fr       */
+/*   Updated: 2022/08/03 15:31:05 by naal-jen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include	<stddef.h> //size_t NULL
+# include	<stddef.h> // size_t NULL
+# include	<stdlib.h> // malloc free sizeof
 
 // -------------------------------------------------------------------------- */
 //                                 <ctype.h>                                  */
