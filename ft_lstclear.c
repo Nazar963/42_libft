@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: naal-jen <naal-jen@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/03 16:04:19 by naal-jen          #+#    #+#             */
-/*   Updated: 2022/08/03 16:45:04 by naal-jen         ###   ########.fr       */
+/*   Created: 2022/08/04 12:25:27 by naal-jen          #+#    #+#             */
+/*   Updated: 2022/08/04 12:25:31 by naal-jen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,15 @@
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp1;
-	t_list	*temp2;
 
 	temp1 = *lst;
 	if (!*lst)
 		return ;
-	while (temp1->next != NULL)
+	while (*lst)
 	{
-		ft_lstdelone(temp1, del);
-		temp1 = temp1->next;
+		temp1 = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = temp1;
 	}
 	*lst = NULL;
 }
