@@ -25,30 +25,46 @@ void	*ft_memset(void *s, int c, size_t n)
 		return (NULL);
 	while (n > 0)
 	{
-		if (*p == 0)
-		{
-			break ;
-		}
+		// if (*p == 0)
+		// {
+		// 	break ;
+		// }
 		*p = car;
 		p++;
 		n--;
 	}
 	return (s);
 }
+
 /*int main(void)
 {
-	char str[5] = "hello";
-	char br[5] = "hello";
+	// char str[5] = "hello";
+	// char br[5] = "hello";
 	   
-	ft_memset(str + 1, '*', 3);
-	printf("my: %s\n", str);
+	// ft_memset(str + 1, '*', 3);
+	// printf("my: %s\n", str);
 	     
-	memset(str + 1, '*', 3);
-	printf("og: %s\n", str);
+	// memset(str + 1, '*', 3);
+	// printf("og: %s\n", str);
 
-	ft_memset(br, '*', 1);
-	printf("my: %s\n", br);
+	// ft_memset(br, '*', 1);
+	// printf("my: %s\n", br);
 	     
-	memset(br, '*', 1);
-	printf("og: %s\n", br);
+	// memset(br, '*', 1);
+	// printf("og: %s\n", br);
+	char tab[100];
+	memset(tab, 0, 100);
+	// printf("og: %s\n", tab);
+
+	// ft_memset(tab, 'A', 0);
+	// printf("og: %s\n", tab);
+
+	// memset(tab, 'A', 0);
+	// printf("og: %s\n", tab);
+
+	ft_memset(tab, 'A', 42);
+	printf("og: %s\n", tab);
+
+	memset(tab, 'A', 42);
+	printf("og: %s\n", tab);
 }*/
