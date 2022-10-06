@@ -12,13 +12,12 @@
 
 #include "libft.h"
 //#include <stdio.h>
-#include <limits.h> // SIZE_T_MAX
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	char	*p;
 
-	if (size && nmemb > SSIZE_MAX / size)
+	if (size && nmemb > 2147483647 / size)
 		return (NULL);
 	p = (char *)malloc(nmemb * size);
 	if (!p)
