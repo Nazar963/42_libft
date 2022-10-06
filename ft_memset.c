@@ -25,10 +25,6 @@ void	*ft_memset(void *s, int c, size_t n)
 		return (NULL);
 	while (n > 0)
 	{
-		// if (*p == 0)
-		// {
-		// 	break ;
-		// }
 		*p = car;
 		p++;
 		n--;

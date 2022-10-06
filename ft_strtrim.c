@@ -70,7 +70,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	j;
 	size_t	n;
 	size_t	fin;
-	size_t len;
+	size_t	len;
 
 	j = 0;
 	n = 0;
@@ -85,46 +85,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (ft_substr(s1, 0, fin + 1));
 }
 
-/*int main(void)
-{
-	// 1
+/*int main(void){
 	// const char *a1 = "bed";
 	// printf("1: %s\n", ft_strtrim("bedhelbedlobed", a1));
-
-	// //2
 	// const char *a2 = "bed";
 	// printf("2: %s\n", ft_strtrim("bedbedhelbedlobedbed", a2));
-
-	// //3
-	// const char *a3 = "fdsafdsafdsa";
-	// printf("3: %s\n", ft_strtrim("fdsafdsafdsahelfdsafdsafdsalofdsafdsafdsa", a3));
-
-	// //4
 	// const char *a4 = "v v v";
 	// printf("4: %s\n", ft_strtrim("v vhellov v", a4));
-
-	// //5
 	// const char *a5 = "1234567";
 	// printf("5: %s\n", ft_strtrim("1234bedhelbedlobed1234567", a5));
-
-	// //6
 	// const char *a6 = "g";
 	// printf("6: %s\n", ft_strtrim("gbgegdghgeglgbgegdglgogbgegdg", a6));
-
-	// //7
-	// const char *a7 = "bed";
-	// printf("7: %s\n", ft_strtrim("bbbbeddddhellobbbbedddd", a7));
-
-	// //8
-	// const char *a8 = "bed";
-	// printf("8: %s\n", ft_strtrim("bdbebdbedbdbeedbdbhellobbbbedddd", a8));
-
-	// 9
-	// char *s = " x";
-	// printf("8: %s`\n", ft_strtrim("   xxx   xxx", s));
-	
-	//10
-	char *saa = "acb";
-	printf("8: %s`\n", ft_strtrim("abcdba", saa));
-
 }*/
