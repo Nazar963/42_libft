@@ -60,7 +60,10 @@ static int	count_digits(long int n)
 {
 	int	i;
 
-	i = 0;
+	if (n < 0)
+		i = 1;
+	else
+		i = 0;
 	if (n == 0)
 	{
 		return (1);
@@ -88,7 +91,7 @@ char	*ft_itoa(int n)
 		return (NULL);
 	if (nbr == 0)
 		ptr[0] = '0';
-	if (nbr < 0 && i++)
+	if (nbr < 0)
 	{
 		ptr[j++] = '-';
 		nbr = -nbr;
