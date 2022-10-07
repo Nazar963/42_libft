@@ -16,30 +16,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
+	const char	*p;
 
-	i = ft_strlen(s) - 1;
-	if (c == 0)
-		return ((char *)s + ft_strlen(s));
-	if (s[i] == (char)c)
+	p = NULL;
+	while (*s != '\0')
 	{
-		s += i;
-		return ((char *)s);
+		if (*s == (char)c)
+			p = s;
+		s++;
 	}
-	while (s[i] != s[0])
-	{
-		if (s[i] == (char)c)
-		{
-			s += i;
-			return ((char *)s);
-		}
-		i--;
-	}
-	if (s[0] == (char)c)
-	{
-		return ((char *)s);
-	}
-	return (NULL);
+	if ((char)c == '\0')
+		p = s;
+	return ((char *)p);
 }
 /*int main(void)  
 {
