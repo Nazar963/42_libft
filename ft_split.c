@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 #include <stdlib.h>
+//#include <stdio.h>
 
 static	char	*ft_strcpy(char *dest, const char *src)
 {

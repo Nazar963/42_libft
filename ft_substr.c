@@ -11,28 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h> // malloc
-#include <stdio.h> // printf for testing
-
-// char	*ft_substr(char const *s, unsigned int start, size_t len)
-// {
-// 	char	*p;
-// 	int		i;
-
-// 	i = 0;
-// 	p = (char *)malloc((len + 1) * sizeof(*p));
-// 	if (!p)
-// 		return (NULL);
-// 	while (s[start] != '\0' && len)
-// 	{
-// 		p[i] = s[start];
-// 		start++;
-// 		len --;
-// 		i++;
-// 	}
-// 	p[i] = '\0';
-// 	return (p);
-// }
+#include <stdlib.h>
+//#include <stdio.h>
 
 static size_t	strnlen(const char *str, size_t n)
 {
@@ -47,29 +27,28 @@ static size_t	strnlen(const char *str, size_t n)
 	return (ptr - str);
 }
 
-// same as strndub but with offset "start"
-char	*ft_substr(char const *str, unsigned int start, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	length;
 	char	*new_str;
 
-	length = ft_strlen(str);
+	length = ft_strlen(s);
 	if (length < start)
 		start = length;
-	str += start;
-	n = strnlen(str, n);
-	new_str = (char *)malloc(n + 1);
+	s += start;
+	len = strnlen(s, len);
+	new_str = (char *)malloc(len + 1);
 	if (!new_str)
 		return (NULL);
-	ft_memcpy(new_str, str, n);
-	new_str[n] = '\0';
+	ft_memcpy(new_str, s, len);
+	new_str[len] = '\0';
 	return (new_str);
 }
 
 /*int	main(void)
 {
-    // char s1[] = "hello my loco";
-    // printf("%s\n", ft_substr(s1, 2, 5));
+    char s1[] = "hello my loco";
+    printf("%s\n", ft_substr(s1, 2, 5));
     
     // char s2[] = "hello my loco";
     // printf("%s\n", ft_substr(s2, 5, 2));
@@ -79,5 +58,7 @@ char	*ft_substr(char const *str, unsigned int start, size_t n)
     
     // char s4[] = "hello my loco";
 	// printf("%s\n", ft_substr(s4, 0, 13));
-			printf("%s\n", ft_substr("tripouille", 0, 42000));
+	//printf("%s\n", ft_substr("tripouille", 0, 42000));
+
+	return (0);
 }*/

@@ -11,8 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdlib.h> // malloc
-// #include <stdio.h> // printf for testing
+// #include <stdio.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
