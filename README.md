@@ -1,6 +1,6 @@
-# Hello there fellow pisciner
+# My implementation of the Libft
 
-This is my implementaion of the first project Libft.
+## problems you might incounter
 you might have a problem with ft_split which is the allocation of a two dimensional array and the process of free
 check this video it might help you:
 
