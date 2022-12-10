@@ -6,7 +6,7 @@
 /*   By: naal-jen <naal-jen@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 15:35:13 by naal-jen          #+#    #+#             */
-/*   Updated: 2022/12/09 15:33:45 by naal-jen         ###   ########.fr       */
+/*   Updated: 2022/12/10 15:37:42 by naal-jen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,9 @@ char	*ft_itoa(int n)
 {
 	char		*ptr;
 	int			i;
-	int			j;
 	long int	nbr;
 
 	i = count_digits(n);
-	j = 0;
 	nbr = n;
 	ptr = (char *)malloc((i + 1) * sizeof(*ptr));
 	if (!ptr)
