@@ -113,5 +113,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ⭐ Star this repository if you found it useful!
 [![GitHub stars](https://img.shields.io/github/stars/Nazar963/42_libft?style=social)](https://github.com/Nazar963/42_libft/stargazers)
 
-[![42](https://img.shields.io/badge/-42-black?style=for-the-badge&logo=42&logoColor=white)](https://profile-v3.intra.42.fr/users/naal-jen)
+[![42 School](https://img.shields.io/badge/42-profile-blue)](https://profile-v3.intra.42.fr/users/naal-jen)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-Nazar963-lightgrey)](https://github.com/Nazar963)
