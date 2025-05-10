@@ -38,7 +38,7 @@ Designed to be efficient, well-structured, and educational, this project serves 
 - **File Descriptor Operations**: `ft_putchar_fd`, `ft_putnbr_fd`
 - **Linked List Utilities (Bonus)**: `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`
 
-## Installation ⚙️
+## Installation
 
 ### Requirements
 - GCC (GNU Compiler Collection)
@@ -47,8 +47,8 @@ Designed to be efficient, well-structured, and educational, this project serves 
 ### Compilation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your_username>/libft.git
-   cd libft
+   git clone https://github.com/Nazar963/42_libft.git
+   cd 42_libft
    ```
 2. Compile the library:
    ```bash
@@ -56,7 +56,7 @@ Designed to be efficient, well-structured, and educational, this project serves 
    ```
 3. The static library `libft.a` will be created in the root directory.
 
-## Usage 💻
+## Usage
 
 Include the library header in your C files:
 ```c
@@ -65,7 +65,7 @@ Include the library header in your C files:
 
 Compile your project with the library:
 ```bash
-gcc -Wall -Wextra -Werror your_program.c -L. -lft -I includes -o your_program
+gcc -Wall -Wextra -Werror your_program.c -L./42_libft -lft -I 42_libft -o your_program
 ```
 
 ### Example
@@ -81,13 +81,14 @@ int main(void)
 }
 ```
 
-## Makefile Targets 🛠️
+## Makefile Targets
 - `make` or `make all`: Compile the library
+- `make bonus`: Compile the bonus part library
 - `make clean`: Remove object files
 - `make fclean`: Remove object files and library
 - `make re`: Recompile the library
 
-## Testing �
+## Testing
 The library can be tested using:
 - Custom test main programs
 - 42 School testers (e.g., [Tripouille/libftTester](https://github.com/Tripouille/libftTester))
@@ -95,11 +96,11 @@ The library can be tested using:
 
 ```bash
 # Example test compilation
-gcc -Wall -Wextra -Werror tests.c -L. -lft -I includes -o test
+gcc -Wall -Wextra -Werror tests.c -L./42_libft -lft -I 42_libft -o test
 ./test
 ```
 
-## Acknowledgments 🙏
+## Acknowledgments
 - 42 School for the project concept
 - C standard library documentation
 - Peer reviewers and contributors
@@ -110,26 +111,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ⭐ Star this repository if you found it useful!
-[![GitHub stars](https://img.shields.io/github/stars/<your_username>/libft?style=social)](https://github.com/<your_username>/libft/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/Nazar963/42_libft?style=social)](https://github.com/Nazar963/42_libft/stargazers)
 
-[![42 Profile](https://img.shields.io/badge/Profile-<your_42_login>-blue)](https://profile.intra.42.fr/users/<your_42_login>)
-[![GitHub Profile](https://img.shields.io/badge/GitHub-<your_username>-lightgrey)](https://github.com/<your_username>)
-```
-
-**To use this template:**
-1. Replace all `<your_username>` occurrences with your GitHub username
-2. Replace `<your_42_login>` with your 42 School intra login
-3. Update features list with your actual implementations
-4. Add any project-specific details or additional sections
-5. Save as `README.md` in your project root
-
-This README includes:
-- Modern badges for visual appeal
-- Clear documentation structure
-- Code examples for easy adoption
-- Build status indicator
-- Social integration (GitHub stars, 42 intra profile)
-- Comprehensive feature listing
-- Testing and development guidelines
-
-Let me know if you'd like to customize any section or add specific details!
+[![42](https://img.shields.io/badge/-42-black?style=for-the-badge&logo=42&logoColor=white)](https://profile-v3.intra.42.fr/users/naal-jen)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-Nazar963-lightgrey)](https://github.com/Nazar963)
