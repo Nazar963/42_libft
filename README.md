@@ -2,21 +2,21 @@
 
 [![42 School](https://img.shields.io/badge/42-School-blue)](https://42firenze.it/)
 [![GitHub license](https://img.shields.io/github/license/Nazar963/42_libft)](https://github.com/Nazar963/42_libft/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/<your_username>/libft/build.yml?branch=master)](https://github.com/<your_username>/libft/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/Nazar963/42_libft/.github/workflows/build.yml?branch=main)](https://github.com/Nazar963/42_libft/.github/workflows/build.yml)
 
 Your very first C library, containing reimplementations of standard functions and additional utilities.
 
 ## Table of Contents 📖
-- [Description](#description-)
-- [Features](#features-)
-- [Installation](#installation-)
-- [Usage](#usage-)
-- [Makefile Targets](#makefile-targets-)
-- [Testing](#testing-)
-- [Acknowledgments](#acknowledgments-)
-- [License](#license-)
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Makefile Targets](#makefile-targets)
+- [Testing](#testing)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
 
-## Description 📝
+## Description
 Libft is a 42 School project that serves as the foundation for future C programming projects. This library contains:
 - Reimplementations of standard C library functions
 - Additional utility functions
@@ -24,7 +24,7 @@ Libft is a 42 School project that serves as the foundation for future C programm
 
 Designed to be efficient, well-structured, and educational, this project serves as a fundamental building block for understanding low-level programming concepts.
 
-## Features ✨
+## Features
 
 ### Standard Functions 🔧
 - **Character Handling**: `ft_isalpha`, `ft_isdigit`, `ft_toupper`, etc.
@@ -104,7 +104,7 @@ gcc -Wall -Wextra -Werror tests.c -L. -lft -I includes -o test
 - C standard library documentation
 - Peer reviewers and contributors
 
-## License 📄
+## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
