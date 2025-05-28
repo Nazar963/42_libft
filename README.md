@@ -118,7 +118,7 @@ For questions or feedback, please open an issue in the repository.
 
 ---
 
-⭐ Star this repository if you found it useful!
+## ⭐ Star this repository if you found it useful!
 [![GitHub stars](https://img.shields.io/github/stars/Nazar963/42_libft?style=social)](https://github.com/Nazar963/42_libft/stargazers)
 
 [![42 School](https://img.shields.io/badge/42-profile-blue)](https://profile-v3.intra.42.fr/users/naal-jen)
