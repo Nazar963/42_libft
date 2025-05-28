@@ -105,8 +105,16 @@ gcc -Wall -Wextra -Werror tests.c -L./42_libft -lft -I 42_libft -o test
 - C standard library documentation
 - Peer reviewers and contributors
 
+## 🤝 Contributing
+
+Feel free to submit issues or pull requests if you have suggestions for improving the test suite or adding more test cases.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📧 Contact
+
+For questions or feedback, please open an issue in the repository.
 
 ---
 
@@ -115,3 +123,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 [![42 School](https://img.shields.io/badge/42-profile-blue)](https://profile-v3.intra.42.fr/users/naal-jen)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-Nazar963-lightgrey)](https://github.com/Nazar963)
+
+---
+Good luck with your Libft project at 42! 🚀
+
