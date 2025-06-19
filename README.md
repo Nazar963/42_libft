@@ -106,25 +106,26 @@ gcc -Wall -Wextra -Werror tests.c -L./42_libft -lft -I 42_libft -o test
 - Peer reviewers and contributors
 
 ## 🤝 Contributing
-
-Feel free to submit issues or pull requests if you have suggestions for improving the test suite or adding more test cases.
+Feel free to submit issues or pull requests if you have suggestions for improving the application or adding more features.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📧 Contact
-
 For questions or feedback, please open an issue in the repository.
-
----
 
 ## ⭐ Star this repository if you found it useful!
 [![GitHub stars](https://img.shields.io/github/stars/Nazar963/42_libft?style=social)](https://github.com/Nazar963/42_libft/stargazers)
+
+---
+
+🪶 *"Every masterful program begins with a well-crafted foundation - this is mine."*
 
 [![42 School](https://img.shields.io/badge/42-profile-blue)](https://profile-v3.intra.42.fr/users/naal-jen)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-Nazar963-lightgrey)](https://github.com/Nazar963)
 [![GitHub Follow](https://img.shields.io/github/followers/Nazar963?style=social)](https://github.com/Nazar963)
 
 ---
+## 🍀 Goodluck:
 Good luck with your Libft project at 42! 🚀
 
